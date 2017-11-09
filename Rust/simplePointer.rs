@@ -2,7 +2,7 @@ fn main() {
     //println!("Hello, world!");
     
     #[allow(dead_code)]
-    let x :i32 = 7;
+    let mut x :i32 = 7;
     #[allow(dead_code)]
     let y :i32 = 9;
     
@@ -25,9 +25,10 @@ fn main() {
 	// error: cannot borrow as mutable
 	
 	// To make this work, move to simplePointer2
+	//x = 8;
     //*p = 8; 
 	
-    // println!("[2] x is {}", x);
+	// println!("[2] x is {}", x);
 	// println!("[2] p is {:p}", p);
-    // println!("[2] *p is {}", *p);
+	// println!("[2] *p is {}", *p);
 }

@@ -55,7 +55,8 @@ fn main() {
    	// we can modify this first element and push it back to testQ
    	let mut e1 :i32 = 0;
    	match firstE {
-   		Some(ref p) => e1 = *p,
+   		Some(p) => e1 = p, // can be something like this: 
+   						// referencing p -> Some(ref p) => e1 = *p,
    		None => println!("Oh no somehow it's a None"),
    	}
    	println!("gets what's inside the Some: {}", e1);

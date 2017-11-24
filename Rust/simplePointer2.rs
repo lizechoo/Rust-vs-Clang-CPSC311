@@ -6,7 +6,7 @@ fn main() {
     #[allow(dead_code)]
     let y :i32 = 9;
     
-    let p = &mut x; // borrow occurs here
+    let p = &mut x; // mutable borrow occurs here
 	// Note that:
 	// let a = &b;
 	// let ref a = b;  // are equivalent
